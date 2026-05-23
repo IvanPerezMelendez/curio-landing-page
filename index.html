@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f4f4f1" />
-  <meta name="description" content="Curio — hazte más culto en 5 minutos al día. Geografía, historia, arte, naturaleza, filosofía. Una sesión diaria, sin exámenes, sin presión." />
-  <title>curio — Cultura general en 5 minutos al día</title>
+  <meta name="description" id="meta-desc" content="Curio — hazte más culto en 5 minutos al día. Geografía, historia, arte, naturaleza, filosofía." />
+  <title id="page-title">curio — Cultura general en 5 minutos al día</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,66 +22,69 @@
       <span class="nav-brand-mark">✱</span>
       <span>curio</span>
     </div>
-    <a href="#" class="btn btn-sm">
-      <span>Launch app</span>
-      <span class="btn-arrow">→</span>
-    </a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language"></button>
+      <a href="#" class="btn btn-sm">
+        <span data-i18n="btn.launch">Launch app</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <p class="eyebrow">Cultura general · 5 minutos al día</p>
+    <p class="eyebrow" data-i18n="hero.eyebrow">Cultura general · 5 minutos al día</p>
     <h1 class="hero-title">
-      Sé más<br>
-      <span class="mark">culto</span><em>.</em>
+      <span data-i18n="hero.line1">Sé más</span><br>
+      <span class="mark" data-i18n="hero.mark">culto</span><em>.</em>
     </h1>
-    <p class="hero-sub">
+    <p class="hero-sub" data-i18n="hero.sub">
       Una sesión diaria de preguntas sobre geografía, historia, arte,
       naturaleza e ideas. Sin exámenes. Sin presión. Solo saber un
       poco más del mundo cada día.
     </p>
     <a href="#" class="btn btn-lg">
-      <span>Launch app</span>
-      <span class="btn-arrow">→ 5 MIN</span>
+      <span data-i18n="btn.launch">Launch app</span>
+      <span class="btn-arrow" data-i18n="btn.time">→ 5 MIN</span>
     </a>
   </section>
 
   <!-- TICKER -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span class="ticker-item">Geografía</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Historia</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Naturaleza</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Arte</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Filosofía</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Costumbres</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Geografía</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Historia</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Naturaleza</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Arte</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Filosofía</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Costumbres</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Geografía</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Historia</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Naturaleza</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Arte</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Filosofía</span><span class="ticker-sep">·</span>
-      <span class="ticker-item">Costumbres</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="0">Geografía</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="1">Historia</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="2">Naturaleza</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="3">Arte</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="4">Filosofía</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="5">Costumbres</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="0">Geografía</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="1">Historia</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="2">Naturaleza</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="3">Arte</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="4">Filosofía</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="5">Costumbres</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="0">Geografía</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="1">Historia</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="2">Naturaleza</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="3">Arte</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="4">Filosofía</span><span class="ticker-sep">·</span>
+      <span class="ticker-item" data-ticker="5">Costumbres</span><span class="ticker-sep">·</span>
     </div>
   </div>
 
   <!-- FEATURES -->
   <section class="features">
     <header class="section-head">
-      <span class="eyebrow">Por qué curio</span>
-      <span class="section-count">04 principios</span>
+      <span class="eyebrow" data-i18n="feat.head">Por qué curio</span>
+      <span class="section-count" data-i18n="feat.count">04 principios</span>
     </header>
 
     <div class="feature-row">
       <span class="feature-n">01</span>
       <div class="feature-content">
-        <h2 class="feature-title"><em>Cinco minutos,</em> ni uno más.</h2>
-        <p class="feature-body">
+        <h2 class="feature-title" data-i18n-html="feat1.title"><em>Cinco minutos,</em> ni uno más.</h2>
+        <p class="feature-body" data-i18n="feat1.body">
           8–10 ejercicios de ~30 segundos cada uno. Si no puedes terminarlos
           en el metro, algo hemos hecho mal.
         </p>
@@ -91,8 +94,8 @@
     <div class="feature-row">
       <span class="feature-n">02</span>
       <div class="feature-content">
-        <h2 class="feature-title">Semanas <em>temáticas.</em></h2>
-        <p class="feature-body">
+        <h2 class="feature-title" data-i18n-html="feat2.title">Semanas <em>temáticas.</em></h2>
+        <p class="feature-body" data-i18n="feat2.body">
           Cada semana un tema distinto: Japón, el Imperio Romano, los océanos,
           el Renacimiento… Un hilo conductor que hace que el conocimiento se
           quede, no que pase.
@@ -103,8 +106,8 @@
     <div class="feature-row">
       <span class="feature-n">03</span>
       <div class="feature-content">
-        <h2 class="feature-title">Racha diaria, <em>sin castigos.</em></h2>
-        <p class="feature-body">
+        <h2 class="feature-title" data-i18n-html="feat3.title">Racha diaria, <em>sin castigos.</em></h2>
+        <p class="feature-body" data-i18n="feat3.body">
           La racha se mantiene por entrar, no por acertar. Fallar es aprender.
           Curio es un amigo culto, no un profesor con lista de notas.
         </p>
@@ -114,8 +117,8 @@
     <div class="feature-row">
       <span class="feature-n">04</span>
       <div class="feature-content">
-        <h2 class="feature-title">El repaso <em>invisible.</em></h2>
-        <p class="feature-body">
+        <h2 class="feature-title" data-i18n-html="feat4.title">El repaso <em>invisible.</em></h2>
+        <p class="feature-body" data-i18n="feat4.body">
           Cada sesión lleva 2 preguntas de semanas pasadas, mezcladas entre
           las nuevas. Tu memoria a largo plazo se entrena sin que tengas que
           pensar en ello.
@@ -127,31 +130,31 @@
   <!-- HOW IT WORKS -->
   <section class="how">
     <header class="section-head">
-      <span class="eyebrow">Cómo funciona</span>
-      <span class="section-count">03 pasos</span>
+      <span class="eyebrow" data-i18n="how.head">Cómo funciona</span>
+      <span class="section-count" data-i18n="how.count">03 pasos</span>
     </header>
 
     <div class="steps">
       <div class="step">
         <span class="step-num">1</span>
-        <h3 class="step-title">Abre curio</h3>
-        <p class="step-body">
+        <h3 class="step-title" data-i18n="step1.title">Abre curio</h3>
+        <p class="step-body" data-i18n="step1.body">
           Cada día, un nuevo subtema te espera. Hoy Japón.
           Mañana Marruecos. Dentro de un mes, el Barroco.
         </p>
       </div>
       <div class="step">
         <span class="step-num">2</span>
-        <h3 class="step-title">Responde y aprende</h3>
-        <p class="step-body">
+        <h3 class="step-title" data-i18n="step2.title">Responde y aprende</h3>
+        <p class="step-body" data-i18n="step2.body">
           Una pregunta a la vez — mapas, imágenes, cronologías,
           estimaciones. Cada respuesta lleva su explicación.
         </p>
       </div>
       <div class="step">
         <span class="step-num">3</span>
-        <h3 class="step-title">Mantén la racha</h3>
-        <p class="step-body">
+        <h3 class="step-title" data-i18n="step3.title">Mantén la racha</h3>
+        <p class="step-body" data-i18n="step3.body">
           Vuelve mañana y sigue donde lo dejaste. En un año
           habrás aprendido más de lo que imaginas.
         </p>
@@ -161,21 +164,143 @@
 
   <!-- CTA -->
   <section class="cta">
-    <p class="eyebrow">Empieza hoy · Gratis</p>
-    <h2 class="cta-title">Más culto.<br><em>Cada día.</em></h2>
+    <p class="eyebrow" data-i18n="cta.eyebrow">Empieza hoy · Gratis</p>
+    <h2 class="cta-title">
+      <span data-i18n="cta.title">Más culto.</span><br>
+      <em data-i18n="cta.italic">Cada día.</em>
+    </h2>
     <a href="#" class="btn btn-lg">
-      <span>Launch app</span>
-      <span class="btn-arrow">→ 5 MIN</span>
+      <span data-i18n="btn.launch">Launch app</span>
+      <span class="btn-arrow" data-i18n="btn.time">→ 5 MIN</span>
     </a>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <span class="footer-brand">curio</span>
-    <span class="footer-meta">Cultura general · 5 min/día</span>
+    <span class="footer-meta" data-i18n="footer.meta">Cultura general · 5 min/día</span>
   </footer>
 
 </div><!-- /.page -->
+
+<script>
+const T = {
+  es: {
+    'btn.launch':  'Launch app',
+    'btn.time':    '→ 5 MIN',
+    'hero.eyebrow':'Cultura general · 5 minutos al día',
+    'hero.line1':  'Sé más',
+    'hero.mark':   'culto',
+    'hero.sub':    'Una sesión diaria de preguntas sobre geografía, historia, arte, naturaleza e ideas. Sin exámenes. Sin presión. Solo saber un poco más del mundo cada día.',
+    'feat.head':   'Por qué curio',
+    'feat.count':  '04 principios',
+    'feat1.title': '<em>Cinco minutos,</em> ni uno más.',
+    'feat1.body':  '8–10 ejercicios de ~30 segundos cada uno. Si no puedes terminarlos en el metro, algo hemos hecho mal.',
+    'feat2.title': 'Semanas <em>temáticas.</em>',
+    'feat2.body':  'Cada semana un tema distinto: Japón, el Imperio Romano, los océanos, el Renacimiento… Un hilo conductor que hace que el conocimiento se quede, no que pase.',
+    'feat3.title': 'Racha diaria, <em>sin castigos.</em>',
+    'feat3.body':  'La racha se mantiene por entrar, no por acertar. Fallar es aprender. Curio es un amigo culto, no un profesor con lista de notas.',
+    'feat4.title': 'El repaso <em>invisible.</em>',
+    'feat4.body':  'Cada sesión lleva 2 preguntas de semanas pasadas, mezcladas entre las nuevas. Tu memoria a largo plazo se entrena sin que tengas que pensar en ello.',
+    'how.head':    'Cómo funciona',
+    'how.count':   '03 pasos',
+    'step1.title': 'Abre curio',
+    'step1.body':  'Cada día, un nuevo subtema te espera. Hoy Japón. Mañana Marruecos. Dentro de un mes, el Barroco.',
+    'step2.title': 'Responde y aprende',
+    'step2.body':  'Una pregunta a la vez — mapas, imágenes, cronologías, estimaciones. Cada respuesta lleva su explicación.',
+    'step3.title': 'Mantén la racha',
+    'step3.body':  'Vuelve mañana y sigue donde lo dejaste. En un año habrás aprendido más de lo que imaginas.',
+    'cta.eyebrow': 'Empieza hoy · Gratis',
+    'cta.title':   'Más culto.',
+    'cta.italic':  'Cada día.',
+    'footer.meta': 'Cultura general · 5 min/día',
+    'page.title':  'curio — Cultura general en 5 minutos al día',
+    'meta.desc':   'Curio — hazte más culto en 5 minutos al día. Geografía, historia, arte, naturaleza, filosofía.',
+    'ticker': ['Geografía','Historia','Naturaleza','Arte','Filosofía','Costumbres'],
+  },
+  en: {
+    'btn.launch':  'Launch app',
+    'btn.time':    '→ 5 MIN',
+    'hero.eyebrow':'General culture · 5 minutes a day',
+    'hero.line1':  'Be more',
+    'hero.mark':   'cultured',
+    'hero.sub':    'A daily session of questions about geography, history, art, nature and ideas. No exams. No pressure. Just knowing a little more about the world every day.',
+    'feat.head':   'Why curio',
+    'feat.count':  '04 principles',
+    'feat1.title': '<em>Five minutes,</em> not one more.',
+    'feat1.body':  '8–10 exercises of ~30 seconds each. If you can\'t finish them on the subway, we\'ve done something wrong.',
+    'feat2.title': 'Weekly <em>themes.</em>',
+    'feat2.body':  'A different topic every week: Japan, the Roman Empire, the oceans, the Renaissance… A through-line that makes knowledge stick, not just pass by.',
+    'feat3.title': 'Daily streak, <em>no punishment.</em>',
+    'feat3.body':  'Your streak stays alive by showing up, not by getting things right. Failure is learning. Curio is a knowledgeable friend, not a teacher with a grade book.',
+    'feat4.title': 'The <em>invisible</em> review.',
+    'feat4.body':  'Each session carries 2 questions from past weeks, mixed in with the new ones. Your long-term memory gets trained without you having to think about it.',
+    'how.head':    'How it works',
+    'how.count':   '03 steps',
+    'step1.title': 'Open curio',
+    'step1.body':  'Every day, a new topic awaits. Today Japan. Tomorrow Morocco. In a month, the Baroque.',
+    'step2.title': 'Answer and learn',
+    'step2.body':  'One question at a time — maps, images, timelines, estimations. Every answer comes with an explanation.',
+    'step3.title': 'Keep your streak',
+    'step3.body':  'Come back tomorrow and pick up where you left off. In a year you\'ll have learned more than you imagine.',
+    'cta.eyebrow': 'Start today · Free',
+    'cta.title':   'More cultured.',
+    'cta.italic':  'Every day.',
+    'footer.meta': 'General culture · 5 min/day',
+    'page.title':  'curio — General culture in 5 minutes a day',
+    'meta.desc':   'Curio — become more cultured in 5 minutes a day. Geography, history, art, nature, philosophy.',
+    'ticker': ['Geography','History','Nature','Art','Philosophy','Customs'],
+  },
+};
+
+function detectLang() {
+  const saved = localStorage.getItem('curio-lang');
+  if (saved) return saved;
+  return navigator.language.toLowerCase().startsWith('en') ? 'en' : 'es';
+}
+
+function applyLang(lang) {
+  const d = T[lang];
+
+  // text nodes
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (d[key] !== undefined) el.textContent = d[key];
+  });
+
+  // html nodes (contain <em> etc.)
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.dataset.i18nHtml;
+    if (d[key] !== undefined) el.innerHTML = d[key];
+  });
+
+  // ticker items
+  document.querySelectorAll('[data-ticker]').forEach(el => {
+    const idx = parseInt(el.dataset.ticker, 10);
+    el.textContent = d.ticker[idx];
+  });
+
+  // page meta
+  document.documentElement.lang = lang;
+  document.getElementById('page-title').textContent = d['page.title'];
+  document.getElementById('meta-desc').setAttribute('content', d['meta.desc']);
+
+  // toggle button label — shows the OTHER language
+  document.getElementById('lang-toggle').textContent = lang === 'es' ? 'EN' : 'ES';
+
+  localStorage.setItem('curio-lang', lang);
+}
+
+function toggleLang() {
+  const current = localStorage.getItem('curio-lang') || detectLang();
+  applyLang(current === 'es' ? 'en' : 'es');
+}
+
+document.getElementById('lang-toggle').addEventListener('click', toggleLang);
+
+// Init
+applyLang(detectLang());
+</script>
 
 </body>
 </html>
